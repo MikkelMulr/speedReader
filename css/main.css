@@ -1,0 +1,140 @@
+@font-face {
+	font-family: "Raleway";
+	src: url(../fonts/Raleway-Regular.ttf);
+}
+
+:root {
+	--main-dark: #333;
+	--btn-color: rgb(243, 86, 24);
+	--btn-hover: rgb(9, 253, 233);
+	--font-color-light: #ddd;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	outline: none;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+main {
+	height: 100vh;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: 'Raleway';
+	height: 100vh;
+
+	background: url(../img/bg3.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.btn {
+	padding: 1.1rem;
+	outline: none;
+	border: none;
+	width: 100%;
+	font-size: 1.3rem;
+
+	background: var(--btn-color);
+	color: var(--font-color-light);
+	width: 30rem;
+}
+
+.btn:hover {
+	background: var(--btn-hover);
+	color: var(--main-dark);
+	cursor: pointer;
+}
+
+#primary-container {
+	padding-top: 3rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+#options {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	padding: 1rem;
+}
+
+.selection {
+	width: 10rem;
+	padding: 1rem;
+	font-size: 1.3rem;
+	/* border-radius: 0.3rem; */
+}
+
+label {
+	padding: 1rem;
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+header,
+footer {
+	background: var(--main-dark);
+	height: 4rem;
+	width: 100%;
+}
+
+header h2 {
+	padding: 1rem;
+	color: var(--font-color-light);
+}
+
+footer {
+	height: 6rem;
+}
+
+/* Inputs Section */
+
+#userText {
+	width: 40rem;
+	height: 20rem;
+}
+
+/* Primary Section */
+
+#primary {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#primary #output {
+	width: 40rem;
+	height: 20rem;
+	background: var(--main-dark);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+#primary #inputs {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+#primary #reader {
+	color: var(--font-color-light);
+	font-size: 5rem;
+}
